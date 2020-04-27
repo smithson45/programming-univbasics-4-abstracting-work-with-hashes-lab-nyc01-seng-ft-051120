@@ -6,9 +6,10 @@ end
 
 def read_from_hash(hash, key)
   # return the correct value using the hash and key parameters
-  
-  x = hash.fetch(key);
-  return x
+  if x = hash.fetch(key);
+    return x
+  else
+    return nil
 end
 
 def update_counting_hash(hash, key)
